@@ -9,7 +9,7 @@ export default function wpContent({photo,context }) {
         // console.log(photo, '--------')
         
         var slug_two = 'wp-content/uploads/2022/01/risky-assumptions.jpg'
-  var baseweburl = 'https://facelive.win'
+  var baseweburl = 'https://btcpasia.com/'
          
         //   if(window.document.referrer.includes('wp-content'))
             
