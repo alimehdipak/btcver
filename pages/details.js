@@ -16,7 +16,7 @@ export default function Details({photo,context }) {
 
   useEffect(()=>{
 console.log(photo, '--------')
-  var baseweburl = 'https://facelive.win'
+  var baseweburl = 'https://btcpasia.com/'
   var urlParams = new URLSearchParams(window.location.search);
   var slug = urlParams.get('slug')
   var postid = urlParams.get('postid')
@@ -34,7 +34,7 @@ console.log(photo, '--------')
     setMyRender(true)
      // alert('third')
 
-     axios.get(`https://facelive.win/wp-json/my_posts/v2/post/${postid}`)
+     axios.get(`https://btcpasia.com/}`)
      .then(res => {
        console.log(res.data[0])
       setPersons(res?.data?.post_content)
@@ -50,7 +50,7 @@ console.log(photo, '--------')
  },[])
 
  const handleOGImage = (ogimg) => {
-  let repogimg = ogimg.replace("https://facelive.win", "https://facelive.netlify.app")
+  let repogimg = ogimg.replace("https://btcpasia.com/", "https://btcverc.netlify.app")
   return repogimg;
  }
 
@@ -117,7 +117,7 @@ console.log(photo, '--------')
 export const getServerSideProps = async (context) => {
   let photo = null;
   console.log('--------------------------')
-  await axios.get(`https://facelive.win/wp-json/my_posts/v2/post/${context.query.postid}`).then(res => 
+  await axios.get(`https://btcpasia.com/}`).then(res => 
   
   photo= res.data
   
